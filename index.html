@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- First Screen -->
+<div id="start" class="start-screen">
+  <div class="box" onclick="showSurprise()">
+    CLICK HERE 💝
+  </div>
+</div>
+
+<!-- Birthday Screen -->
+<div id="surprise" class="surprise-screen hidden">
+  <div class="card">
+
+    <img src="panda.png" class="panda" alt="Cute Panda">
+
+    <div class="cake">
+      🎂
+    </div>
+
+    <h1>Happy Birthday</h1>
+    <h2>Vidhi 💖</h2>
+
+    <p class="msg">
+      May your life be filled with smiles,<br>
+      sweetness and endless happiness ✨
+    </p>
+
+  </div>
+</div>
+
+<script>
+  function showSurprise() {
+    document.getElementById("start").style.display = "none";
+    document.getElementById("surprise").classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
