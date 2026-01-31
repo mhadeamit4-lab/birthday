@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* START SCREEN */
+.start-screen {
+  height: 100vh;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 220px;
+  height: 120px;
+  border: 3px dashed #ff69b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  cursor: pointer;
+  background: white;
+  border-radius: 15px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* SURPRISE SCREEN */
+.surprise-screen {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: pop 1.2s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+/* Panda */
+.panda {
+  width: 150px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Cake */
+.cake {
+  font-size: 80px;
+  animation: cakepop 1.5s infinite alternate;
+}
+
+@keyframes cakepop {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+h1 {
+  color: #c2185b;
+}
+
+h2 {
+  color: #ff4081;
+}
+
+.msg {
+  font-size: 0.95em;
+  color: #555;
+}
